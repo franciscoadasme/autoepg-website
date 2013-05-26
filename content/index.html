@@ -1,0 +1,144 @@
+---
+title: Home
+---
+
+<%= render 'header' %>
+
+<section id="features" class="module">
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<div class="promo cloud">
+					<div class="inner">
+						<h3>All your accounts in one place</h3>
+						<p>Connect your Google Drive accounts and you are a ready to access the best Google Drive application in the market. View and edit multiple documents at the same time regardless of the account they are on. </p>
+					</div>
+					<img src="http://www.archyapp.com/img/promoCloud.png">
+				</div>
+				<div class="promo social">
+					<div class="inner">
+						<h3>Collaboration made easy</h3>
+						<p>Archy is the first person-centric file manager. Acces all your Gmail contacts combined with Facebook info from a centralized place. Just drag&amp;drop a file on your contact and start collaborating. Always be alerted live through the Notification Center of any change made to your files.</p>
+					</div>
+					<a class="fancybox-media" href="http://vimeo.com/56425178"><img src="http://www.archyapp.com/img/promoSocial.png"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="download" class="module">
+	<div class="container">
+		<div class="row">
+			<header>
+				<h2>Download AutoEPG</h2>
+				<h3 class="muted">Available for research and/or academic purposes</h3>
+			</header>
+			<div class="span4 offset4">
+				<div class="tile">
+          <img src="assets/img/download.png" alt="Infinity-Loop@2x" class="tile-image">
+          <h3 class="tile-title">AutoEPG Package</h3>
+          <p>It offers a simple user interface and loads of features to analyze EPG recordings</p>
+          <a class="btn btn-primary btn-large btn-block" href="#">
+          	Get it now
+          </a>
+          <small class="muted">Requires Qt Libraries (Included)</small>
+        </div>
+			</div>
+			<div class="span6 offset3 text-center">
+				<p>
+					Version <strong>0.9.1</strong> b96 (May 2013)<br>
+					<span class="muted">
+						It runs on Windows 7, Mac OS X 10.6+ (64-bit Intel)<br>
+						and Linux (tested on Ubuntu-based distros only)
+					</span>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="about" class="module">
+	<div class="container">
+		<div class="row">
+			<section id="core_team">
+		  <header>
+		    <h2>Meet the awesome folks who make AutoEPG</h2>
+		  </header>
+		  <ul class="unstyled">
+		    <li>
+		      <figure>
+		        <img src="<%= gravatar_for "francisco.adasme@gmail.com", size: 192 %>" alt="Francisco Adasme" style="background-image: url(<%= gravatar_for "francisco.adasme@gmail.com", size: 192 %>)" />
+		        <figcaption><h3>Francisco Adasme</h3></figcaption>
+		      </figure>
+		      <p>Francisco is a Bioinformatic Engineer and a PhD student in Applied Sciences at <a href="http://www.utalca.cl">Universidad de Talca</a>, Chile. He is the developer behind AutoEPG and has developed some routines in other science fields.</p>
+					<p>His main research interests are related to the study of molecular interactions in several protein-drug systems through computational chemistry methods, but he also serves as web developer and recently, Mac OS X developer.</p>
+		      <a href="http://about.me/franciscoadasme">about.me/franciscoadasme</a>
+		    </li><!--
+		    --><li>
+		      <figure>
+		        <img src="assets/img/camila.jpg" alt="Camila Munoz" style="background-image: url(assets/img/camila.jpg)">
+		        <figcaption><h3>Camila Muñoz</h3></figcaption>
+		      </figure>
+		      <p>Camila proposed AutoEPG's development during her internship at Dr. Ramirez's laboratory back in 2011. Since then, she has taken the lead of the project as well as she took care of product development and testing.</p>
+		      <p>She belongs to the <a href="http://cbsm.utalca.cl">Centre for Bioinformatics and Molecular Simulations</a> (CBSM), where she's currently conducting his PhD thesis on the molecular study of A2A receptor inhibitors.</p>
+		      <a href="http://about.me/camila.munoz">about.me/camila.munoz</a>
+		    </li><!--
+		    --><li>
+		      <figure>
+		        <img src="<%= gravatar_for "claudio.clramirez@gmail.com", size: 192 %>" alt="Claudio C. Ramirez" style="background-image: url(<%= gravatar_for "claudio.clramirez@gmail.com", size: 192 %>)">
+		        <figcaption><h3>Claudio C. Ramirez</h3></figcaption>
+		      </figure>
+		      <p>Claudio is interested on insect-plant interactions emphasizing proximal (ecological) and distal (evolutionary) causes. Particulary, I have been studying behavioural and morphological mechanisms underlying insect-feeding patterns, as well as plant responses to insects herbivory.</p>
+		      <p>I have studied some of these topics working with cereal aphids (Hemiptera:Aphididae), which are important agronomical pest in Chile.</p>
+		      <a href="http://biologia.utalca.cl/biodiversidad/insecto-planta/Claudio.html">biologia.utalca.cl</a>
+		    </li>
+		  </ul>
+		</section>
+		</div>
+	</div>
+</section>
+
+<section id="contact" class="module">
+	<div class="container">
+		<div class="row">
+			<div class="span8">
+				<h2>Contact</h2>
+				<iframe width="620" height="384" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Universidad+de+Talca,+chile&amp;aq=&amp;sll=-35.412246,-71.641984&amp;sspn=0.049107,0.070553&amp;ie=UTF8&amp;hq=Universidad+de+Talca,+chile&amp;hnear=&amp;radius=15000&amp;t=m&amp;cid=8889998698933059338&amp;ll=-35.405492,-71.633177&amp;spn=0.026794,0.053129&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+			</div>
+			<div class="addresses span4">
+				<div class="content">
+					<address>
+					  <a href="http://cbsm.utalca.cl">Centre for Bioinformatics and Molecular Simulation</a><br>
+					  Universidad de Talca<br>
+					  Av. Lircay S/N<br>
+					  Talca, Chile<br>
+					  <abbr title="Phone">P:</abbr> (56) 71 221 890
+					</address>
+					<address>
+					  <a href="http://biologia.utalca.cl/biodiversidad/insecto-planta/index.html">Laboratorio de Interacciones<br>Insecto-Planta</a><br>
+					  Universidad de Talca<br>
+					  Av. Lircay S/N<br>
+					  Talca, Chile<br>
+					  <abbr title="Phone">P:</abbr> (56) 71 200 267
+					</address>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer id="footer" class="module">
+	<div class="container">
+		<div class="row">
+			<ul class="nav nav-pills">
+				<li><a href="#">Top</a></li>
+				<li><a href="#features">Features</a></li>
+				<li><a href="#download">Download</a></li>
+				<li><a href="#about">About us</a></li>
+			</ul>
+			<p class="made">Made in Chile</p>
+		</div>
+	</div>
+	<p class="rights">© 2013 All Rights Reserved &ndash; <a href="http://cbsm.utalca.cl"><abbr title="Centre for Bioinformatics and Molecular Simulation">CBSM</abbr></a></p>
+</footer>

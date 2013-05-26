@@ -1,0 +1,19 @@
+#contact {
+	padding: 0;
+
+	.row > [class*="span"] {
+		padding: 128px 0;
+	}
+}
+
+.addresses {
+	background: $turquoise;
+	color: white;
+
+	.content {
+		padding: 0 24px;
+		color: lighten($turquoise, 35%);
+
+		a { color: white; }
+	}
+}
