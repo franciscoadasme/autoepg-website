@@ -5,10 +5,16 @@
 .tile {
 	margin: 48px 0 32px;
 	padding: 48px 16px 16px;
+	height: 434px - 48px - 16px;
 	background-color: #eff0f2;
 	border-radius: 6px;
 	position: relative;
 	text-align: center;
 
 	.btn { margin: 24px 0 8px; }
+	img { height: 128px; }
+	.disabled {
+		cursor: not-allowed;
+		&:hover { background: $turquoise; }
+	}
 }

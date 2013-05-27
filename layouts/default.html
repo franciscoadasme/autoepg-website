@@ -14,6 +14,21 @@
     
   <%= render 'nav' %>
   <%= yield %>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script src="assets/js/jquery.smooth-scroll.min.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      $('ul.nav a').smoothScroll();
+      $('a.top').on('click', function(e) {
+      	e.preventDefault();
+      	$.smoothScroll({ offset: 0 })
+      });
+      console.log($('a.top').text());
+
+    });
+  </script>
 </body>
 
 </html>

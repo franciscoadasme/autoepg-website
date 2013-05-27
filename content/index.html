@@ -8,23 +8,65 @@ title: Home
 	<div class="container">
 		<div class="row">
 			<div class="span12">
-				<div class="promo cloud">
+
+				<div id="automatic" class="promo">
 					<div class="inner">
-						<h3>All your accounts in one place</h3>
-						<p>Connect your Google Drive accounts and you are a ready to access the best Google Drive application in the market. View and edit multiple documents at the same time regardless of the account they are on. </p>
+						<h3>Analyze your EPG recordings with one button push</h3>
+						<p>Several EPG waveform recognition engines have been developed based on data collected by Dr. Ramirez's group, which includes many aphids species. All these advancements are added to AutoEPG software offering automatic analisis of EPG data.</p>
 					</div>
-					<img src="http://www.archyapp.com/img/promoCloud.png">
+					<img src="assets/img/automatic.png">
 				</div>
-				<div class="promo social">
+
+				<div id="editing" class="promo">
 					<div class="inner">
-						<h3>Collaboration made easy</h3>
-						<p>Archy is the first person-centric file manager. Acces all your Gmail contacts combined with Facebook info from a centralized place. Just drag&amp;drop a file on your contact and start collaborating. Always be alerted live through the Notification Center of any change made to your files.</p>
+						<h3>A tailored analysis tool</h3>
+						<p>EPG analysis and editing couldn't be faster with AutoEPG's clean and easy-to-use user interface. The EPG Profile Viewer offers an excellent way to track, review and edit your work, and together with lots of useful shortcuts, they greatly enhance your analysis workflow. </p>
 					</div>
-					<a class="fancybox-media" href="http://vimeo.com/56425178"><img src="http://www.archyapp.com/img/promoSocial.png"></a>
+					<img src="assets/img/editing.png">
+				</div>
+
+				<div id="cross" class="promo">
+					<div class="inner">
+						<h3>Don't have a Mac?, No problem</h3>
+						<p>AutoEPG was developed using the cross-platform application framework Qt, which allows to port AutoEPG to all major operating systems with ease and having a native look-and-feel.</p>
+					</div>
+					<img src="assets/img/mainwindows.png">
+				</div>
+
+				<div id="share" class="promo">
+					<div class="inner">
+						<h3>Don't work by your own, share it with ease</h3>
+						<p>You can export your changes into a EPS format file, which then can be edited by your colleagues. Invidiual comments can be very useful for reviewing the results and sharing your ideas, so use and read them thoroughly.</p>
+					</div>
+					<img src="assets/img/exporting.png">
+				</div>
+
+				<div class="row">
+					<div id="else" class="promo">
+						<div class="span4">
+							<div class="content">
+								<h4>Equipment agnostic</h4>
+								<p>While AutoEPG can read Probe Acquisition files directly, it can also read ASCII files which can be derived from any EPG acquisition equipment.</p>
+							</div>
+						</div>
+						<div class="span4">
+							<div class="content">
+								<h4>Use your results anywhere</h4>
+								<p>You can export your results into a comma-separated values (CSV) file, so you can easily use them in any spreadsheet application of your choosing such as Microsoft Excel, Numbers or LibreOffice.</p>
+							</div>
+						</div>
+						<div class="span4">
+							<div class="content">
+								<h4>Widgets &amp; panels</h4>
+								<p>Many visual components of AutoEPG can be undock from the main window, so you can drag them to a secondary monitor and arrange them as you please.</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<a href="" class="top"><i class="icon-arrow-up"></i> Back to top</a>
 </section>
 
 <section id="download" class="module">
@@ -32,30 +74,47 @@ title: Home
 		<div class="row">
 			<header>
 				<h2>Download AutoEPG</h2>
-				<h3 class="muted">Available for research and/or academic purposes</h3>
+				<h3 class="muted">Available on major operating systems</h3>
 			</header>
-			<div class="span4 offset4">
+			<div class="span4">
 				<div class="tile">
-          <img src="assets/img/download.png" alt="Infinity-Loop@2x" class="tile-image">
-          <h3 class="tile-title">AutoEPG Package</h3>
-          <p>It offers a simple user interface and loads of features to analyze EPG recordings</p>
+          <img src="assets/img/linux.png" alt="Linux" class="tile-image">
+          <h3 class="tile-title">Linux</h3>
+          <p>Only one binary is available, which has been tested on Ubuntu 13.04.</p>
+          <p>However, it should be portable to other Ubuntu- or Debian-based distros.</p>
+          <a class="btn btn-primary btn-large btn-block disabled" href="#" title="Not available yet">
+          	Get binary
+          </a>
+          <small class="muted">Version 0.9.1 b99 (May 2013)</small>
+        </div>
+			</div>
+			<div class="span4">
+				<div class="tile">
+          <img src="assets/img/win.png" alt="Windows" class="tile-image">
+          <h3 class="tile-title">Windows</h3>
+          <p>It is distributed as a single executable package, ready to deploy everywhere.</p>
+          <p>It runs on Windows XP, 7 and 8 (probably).</p>	
           <a class="btn btn-primary btn-large btn-block" href="#">
-          	Get it now
+          	autoepg.rar
           </a>
           <small class="muted">Requires Qt Libraries (Included)</small>
         </div>
 			</div>
-			<div class="span6 offset3 text-center">
-				<p>
-					Version <strong>0.9.1</strong> b96 (May 2013)<br>
-					<span class="muted">
-						It runs on Windows 7, Mac OS X 10.6+ (64-bit Intel)<br>
-						and Linux (tested on Ubuntu-based distros only)
-					</span>
-				</p>
+			<div class="span4">
+				<div class="tile">
+          <img src="assets/img/osx.png" alt="Mac OS X" class="tile-image">
+          <h3 class="tile-title">Mac OS X</h3>
+          <p>A single bundle has been generated, with no other dependencies.</p>
+          <p>It supports OS X 10.6+ (64-bit Intel only), albeit it has been tested up to 10.8.</p>
+          <a class="btn btn-primary btn-large btn-block disabled" href="#" title="Not available yet">
+          	autoepg.app
+          </a>
+          <small class="muted">Version 0.9.1 b99 (May 2013)</small>
+        </div>
 			</div>
 		</div>
 	</div>
+	<a href="" class="top"><i class="icon-arrow-up"></i> Back to top</a>
 </section>
 
 <section id="about" class="module">
@@ -97,13 +156,14 @@ title: Home
 		</section>
 		</div>
 	</div>
+	<a href="" class="top"><i class="icon-arrow-up"></i> Back to top</a>
 </section>
 
 <section id="contact" class="module">
 	<div class="container">
 		<div class="row">
 			<div class="span8">
-				<h2>Contact</h2>
+				<h2>Where are we at</h2>
 				<iframe width="620" height="384" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Universidad+de+Talca,+chile&amp;aq=&amp;sll=-35.412246,-71.641984&amp;sspn=0.049107,0.070553&amp;ie=UTF8&amp;hq=Universidad+de+Talca,+chile&amp;hnear=&amp;radius=15000&amp;t=m&amp;cid=8889998698933059338&amp;ll=-35.405492,-71.633177&amp;spn=0.026794,0.053129&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
 			</div>
 			<div class="addresses span4">
@@ -126,16 +186,17 @@ title: Home
 			</div>
 		</div>
 	</div>
+	<a href="#" class="top"><i class="icon-arrow-up"></i> Back to top</a>
 </section>
 
 <footer id="footer" class="module">
 	<div class="container">
 		<div class="row">
 			<ul class="nav nav-pills">
-				<li><a href="#">Top</a></li>
+				<li><a class="top" href="#">Top</a></li>
 				<li><a href="#features">Features</a></li>
 				<li><a href="#download">Download</a></li>
-				<li><a href="#about">About us</a></li>
+				<li><a href="#about">Meet us</a></li>
 			</ul>
 			<p class="made">Made in Chile</p>
 		</div>

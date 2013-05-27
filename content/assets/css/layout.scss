@@ -61,3 +61,20 @@ body {
 		bottom: 16px;
 	}
 }
+
+section a.top {
+	position: absolute;
+	right: 32px;
+	bottom: 32px;
+	color: #999;
+	color: rgba(black, .5);
+
+	i { opacity: .5; vertical-align: top; }
+
+	&:hover {
+		color: black;
+		text-decoration: none;
+
+		i { opacity: 1; }
+	}
+}
