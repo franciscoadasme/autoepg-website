@@ -4,10 +4,12 @@
 	.row > [class*="span"] {
 		padding: 128px 0;
 	}
+
+	header { margin-bottom: 32px; text-align: left; }
 }
 
 .addresses {
-	height: 445px;
+	height: 467px;
 	background: $turquoise;
 	color: white;
 
