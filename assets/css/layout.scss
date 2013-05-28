@@ -12,7 +12,7 @@ body {
 	background: white;
 
 	&:nth-child(odd) {
-		background: $module-bg-color url(assets/img/grey_background.jpg);
+		background: $module-bg-color url(../img/grey_background.jpg);
 		background-position: bottom;
 		background-repeat: repeat-x;
 	}
