@@ -1,13 +1,6 @@
 require 'sinatra'
-require 'digest/md5'
 require 'sass'
-
-  helpers do
-    def gravatar_for(email, params = {})
-      hash = Digest::MD5.hexdigest(email.downcase)
-      image_src = "http://www.gravatar.com/avatar/#{hash}?#{URI.encode_www_form params}"
-    end
-  end
+require "#{File.dirname(__FILE__)}/lib/helpers.rb"
 
 get '/' do
   erb :index
