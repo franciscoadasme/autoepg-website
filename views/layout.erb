@@ -4,19 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>AutoEPG - Automatic processing of EPG data</title>
-  <link rel="stylesheet" href="/style.css">
-
-  <!-- you don't need to keep this, but it's cool for stats! -->
-  <meta name="generator" content="nanoc <%= Nanoc::VERSION %>"> 
+  <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
 <body>
-    
-  <%= render 'nav' %>
+
+  <%= erb :nav %>
   <%= yield %>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-  <script src="assets/js/jquery.smooth-scroll.min.js"></script>
+  <script src="js/jquery.smooth-scroll.min.js"></script>
   <script>
     $(document).ready(function() {
 
