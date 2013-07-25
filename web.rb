@@ -12,5 +12,9 @@ get '/css/stylesheet.css' do
 end
 
 get '/download/windows' do
-  redirect 'https://www.dropbox.com/s/naai5cnq2cmt4lj/AutoEPG.exe?dl=1'
+  redirect 'https://s3.amazonaws.com/autoepg/AutoEPG.exe'
+end
+
+get '/download/user-manual' do
+  redirect 'https://s3.amazonaws.com/autoepg/autoepg-user-manual.pdf'
 end
