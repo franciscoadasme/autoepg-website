@@ -1,5 +1,10 @@
 #download {
 	background: white;
+	
+	footer {
+		@extend .text-center;
+		padding-top: 24px;
+	}
 }
 
 .tile {
