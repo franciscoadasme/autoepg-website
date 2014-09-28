@@ -1,3 +1,4 @@
+<%= erb :nav %>
 <%= erb :header %>
 
 <section id="features" class="module">
@@ -79,12 +80,13 @@
 				<div class="tile">
           <img src="img/linux.png" alt="Linux" class="tile-image">
           <h3 class="tile-title">Linux</h3>
-          <p>Only one binary is available, which has been tested on Ubuntu 13.04.</p>
-          <p>However, it should be portable to other Ubuntu- or Debian-based distros.</p>
+          <!-- <p>Only one binary is available, which has been tested on Ubuntu 13.04.</p>
+          <p>However, it should be portable to other Ubuntu- or Debian-based distros.</p> -->
+		  <p>Soon to be available.</p>
           <a class="btn btn-primary btn-large btn-block disabled" href="#" title="Not available yet">
           	Get binary
           </a>
-          <small class="muted">Version 0.9.1 b99 (May 2013)</small>
+          <!-- <small class="muted">Version 0.9.11 Build 124 (Sept 2014)</small> -->
         </div>
 			</div>
 			<div class="span4">
@@ -96,27 +98,42 @@
           <a class="btn btn-primary btn-large btn-block" href="/download/windows">
           	autoepg.exe
           </a>
-          <small class="muted">Requires Qt Libraries (Included)</small>
+          <!-- <small class="muted">Requires Qt Libraries (Included)</small> -->
         </div>
 			</div>
 			<div class="span4">
 				<div class="tile">
           <img src="img/osx.png" alt="Mac OS X" class="tile-image">
           <h3 class="tile-title">Mac OS X</h3>
-          <p>A single bundle has been generated, with no other dependencies.</p>
-          <p>It supports OS X 10.6+ (64-bit Intel only), albeit it has been tested only on 10.8.</p>
+          <!-- <p>A single bundle has been generated, with no other dependencies.</p>
+          <p>It supports OS X 10.6+ (64-bit Intel only), albeit it has been tested only on 10.8.</p> -->
+		<p>Soon to be available.</p>
           <a class="btn btn-primary btn-large btn-block disabled" href="#" title="Not available yet">
           	autoepg.app
           </a>
-          <small class="muted">Version 0.9.1 b99 (May 2013)</small>
+          <!-- <small class="muted">Version 0.9.1 b99 (May 2013)</small> -->
         </div>
 			</div>
-      <footer id="manual" class="span12">
-        You can download <strong>AutoEPG user manual</strong> from <a href="/download/user-manual">here</a>
-        <span class="label label-warning">Work in progress</span>
-        <p>
-          <small class="muted">Beware that the available document is either incomplete and/or outdated</small>
-        </p>
+      <footer class="span12">
+		<p class="text-center muted">
+			<%= settings.version %> - See <a href="/release-notes">Release notes</a> for details.
+		</p>
+		<div class="row">
+			<p class="span8 offset2 text-center">
+				Check out the <a href="/benchmark">Benchmark toolset</a> for more information about training and testing data sets and analysis tools used during AutoEPG development.
+			</p>
+			<div class="span8 offset2 text-center well well-small" style="margin-top: 20px;">
+				<span class="badge badge-warning">#</span> AutoEPG's source code is now available at <a href="https://github.com/franciscoadasme/autoepg">GitHub</a>.
+			</div>
+		</div>
+		<section id="manual">
+			<hr>
+	        You can download <strong>AutoEPG user manual</strong> from <a href="/download/user-manual">here</a>
+	        <span class="label label-warning">Work in progress</span>
+	        <p>
+	          <small class="muted">Beware that the available documentation is  incomplete and outdated.</small>
+	        </p>
+		</section>
       </footer>
 		</div>
 	</div>
@@ -136,8 +153,8 @@
 		        <img src="<%= gravatar_for "francisco.adasme@gmail.com", size: 192 %>" alt="Francisco Adasme" style="background-image: url(<%= gravatar_for "francisco.adasme@gmail.com", size: 192 %>)" />
 		        <figcaption><h3>Francisco Adasme</h3></figcaption>
 		      </figure>
-		      <p>Francisco is a Bioinformatic Engineer and a PhD student in Applied Sciences at <a href="http://www.utalca.cl">Universidad de Talca</a>, Chile. He is the developer behind AutoEPG and has developed some routines in others science fields.</p>
-					<p>His main research interests are related to the study of molecular interactions in several protein-drug systems through computational chemistry methods, but he also serves as web developer and recently, Mac OS X developer.</p>
+		      <p>Francisco is a Bioinformatician and a PhD student in Applied Sciences at <a href="http://www.utalca.cl">Universidad de Talca</a>, Chile. He is the developer behind AutoEPG and has developed some software routines in others science fields.</p>
+					<p>His main research interests are related to the study of molecular interactions in several protein-drug systems through computational chemistry methods, but he also serves as web developer.</p>
 		      <a href="http://about.me/franciscoadasme">about.me/franciscoadasme</a>
 		    </li><!--
 		    --><li>
@@ -146,7 +163,7 @@
 		        <figcaption><h3>Camila Muñoz</h3></figcaption>
 		      </figure>
 		      <p>Camila proposed AutoEPG development during her internship at Dr. Ramirez's laboratory back in 2011. Since then, she has taken the lead of the project as well as she took care of product development and testing.</p>
-		      <p>She belongs to the <a href="http://cbsm.utalca.cl">Centre for Bioinformatics and Molecular Simulations</a> (CBSM), where she's currently conducting his PhD thesis on the molecular study of A2A receptor inhibitors.</p>
+		      <p>She belongs to the <a href="http://cbsm.utalca.cl">Centre for Bioinformatics and Molecular Simulations</a> (CBSM), where she's currently conducting his PhD thesis on the molecular study of A<sub>2A</sub> receptor inhibitors.</p>
 		      <a href="http://about.me/camila.munoz">about.me/camila.munoz</a>
 		    </li><!--
 		    --><li>
@@ -177,11 +194,11 @@
 			<div class="addresses span4">
 				<div class="content">
 					<address>
-					  <a href="http://cbsm.utalca.cl">Centre for Bioinformatics and Molecular Simulation</a><br>
+					  <a href="http://cbsm.utalca.cl">Center for Bioinformatics and Molecular Simulation</a><br>
 					  Universidad de Talca<br>
 					  Av. Lircay S/N<br>
 					  Talca, Chile<br>
-					  56) 71 201 685<br>
+					  (56) 71 201 685<br>
 					  <a href="mailto:cbsmchile@gmail.com">cbsmchile@gmail.com</a>
 					</address>
 					<address>
@@ -201,17 +218,4 @@
 	<a href="#" class="top"><i class="icon-arrow-up"></i> Back to top</a>
 </section>
 
-<footer id="footer" class="module">
-	<div class="container">
-		<div class="row">
-			<ul class="nav nav-pills">
-				<li><a class="top" href="#">Top</a></li>
-				<li><a href="#features">Features</a></li>
-				<li><a href="#download">Download</a></li>
-				<li><a href="#about">Meet us</a></li>
-			</ul>
-			<p class="made">Made in Chile</p>
-		</div>
-	</div>
-	<p class="rights">© 2013 All Rights Reserved &ndash; <a href="http://cbsm.utalca.cl"><abbr title="Centre for Bioinformatics and Molecular Simulation">CBSM</abbr></a></p>
-</footer>
+<%= erb :footer %>

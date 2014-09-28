@@ -1,6 +1,6 @@
 #download {
 	background: white;
-	
+
 	footer {
 		@extend .text-center;
 		padding-top: 24px;
@@ -8,6 +8,7 @@
 }
 
 .tile {
+	position: relative;
 	margin: 0;
 	padding: 48px 16px 16px;
 	height: 434px - 48px - 16px;
@@ -16,7 +17,13 @@
 	position: relative;
 	text-align: center;
 
-	.btn { margin: 24px 0 8px; }
+	.btn {
+		position: absolute;
+		right: 16px;
+		bottom: 16px;
+		left: 16px;
+		width: auto;
+	}
 	img { height: 128px; }
 	.disabled {
 		cursor: not-allowed;

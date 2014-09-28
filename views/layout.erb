@@ -18,24 +18,25 @@
 </head>
 
 <body>
-
-  <%= erb :nav %>
   <%= yield %>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-  <script src="js/jquery.smooth-scroll.min.js"></script>
-  <script>
-    $(document).ready(function() {
+  <%= request.path %>
+	<% if request.path == '/' %>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
+    <script>
+      $(document).ready(function() {
 
-      $('ul.nav a, #learn-more').smoothScroll();
-      $('a.top').on('click', function(e) {
-      	e.preventDefault();
-      	$.smoothScroll({ offset: 0 })
+        $('ul.nav a, #learn-more').smoothScroll();
+        $('a.top').on('click', function(e) {
+        	e.preventDefault();
+        	$.smoothScroll({ offset: 0 })
+        });
+        console.log($('a.top').text());
+
       });
-      console.log($('a.top').text());
-
-    });
-  </script>
+    </script>
+  <% end %>
 </body>
 
 </html>

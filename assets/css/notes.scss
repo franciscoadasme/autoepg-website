@@ -1,0 +1,55 @@
+#release-notes h2 {
+  margin: 30px 0 15px;
+  font-size: 24px;
+  font-weight: normal;
+
+  .sep {
+    padding: 0 5px 0;
+    color: #ccc;
+    font-weight: lighter;
+  }
+
+  .date {
+    font-size: 16px;
+    color: #444;
+  }
+}
+
+ul.notes {
+  @extend .unstyled;
+  margin-bottom: 20px;
+
+  & > li {
+    position: relative;
+    margin: 10px 0;
+    padding: 0 0 0 80px;
+    line-height: 25px;
+    font-size: 16px;
+  }
+
+  .tag {
+    @extend .label;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    margin-right: 10px;
+    padding: 3px 6px;
+    border-radius: 2px;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+
+  .fixed {
+    left: 24px;
+    background-color: $turquoise; }
+  .improved { background-color: #5B6B8F; }
+  .feature {
+    left: 7px;
+    background-color: #C5BD95; }
+  .crash {
+    left: 18px;
+    background-color: #BC3F51; }
+  .note {
+    left: 24px;
+    background-color: #6CDFEA; }
+}
