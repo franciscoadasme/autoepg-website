@@ -1,7 +1,5 @@
-require 'bundler/setup'
 require 'sinatra'
 require 'sass'
-require 'Haml'
 require "#{File.dirname(__FILE__)}/lib/helpers.rb"
 
 configure do
@@ -26,9 +24,7 @@ get '/download/user-manual' do
 end
 
 get '/release-notes' do
-  erb :layout do
-    haml :changelog
-  end
+  erb :changelog
 end
 
 get '/benchmark' do

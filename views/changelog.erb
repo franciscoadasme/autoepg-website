@@ -1,0 +1,242 @@
+<% @subtitle = 'Release Notes' %>
+<%= erb :header_alt %>
+
+<div id="release-notes" class=" container content">
+  <div class="row">
+    <div class="span8">
+      <%= version_tag '0.9.11', 124, Date.new(2014, 8, 9) %>
+      <ul class="notes">
+        <li>
+          <%= tag 'fixed' %>
+          <p>Panoramic view is not longer blank.</p>
+        </li>
+      </ul>
+
+      <%= version_tag '0.9.10', 123, Date.new(2014, 5, 15) %>
+      <ul class="notes">
+        <li>
+          <%= tag 'feature' %>
+          <p>Added support for loading multiple files at once.</p>
+        </li>
+        <li>
+          <%= tag 'improved' %>
+          <p>Added acknowledgments for J. Salinas-Cornejo for ther contribution to
+          AutoEPG development (see Help > About).</p>
+        </li>
+        <li>
+          <%= tag 'improved' %>
+          <p>Memory management after closing a file.</p>
+        </li>
+        <li>
+          <%= tag 'fixed' %>
+          <p>Filling empty space at the end of a EPG record during
+          post-processing.</p>
+        </li>
+      </ul>
+
+      <%= version_tag '0.9.9', 119, Date.new(2014, 5, 6) %>
+      <ul class="notes">
+        <li>
+          <%= tag 'improved' %>
+          <p>Scan tab in the Preferences window.</p>
+        </li>
+        <li>
+          <%= tag 'improved' %>
+          <p>Filling gaps after scanning job. Consecutive pd waveforms are not
+          glue together anymore but instead a C segment is inserted between the
+          two.</p>
+        </li>
+        <li>
+          <%= tag 'improved' %>
+          <p>Information messages related to the scanning job and visualization of
+          the results.</p>
+        </li>
+      </ul>
+
+      <%= version_tag '0.9.8', 114, Date.new(2014, 4, 30) %>
+      <ul class="notes">
+        <li>
+          <%= tag 'feature' %>
+          <p>Now pd length parameter can be edited in the Preferences window.
+          Others parameters may be added in the future.</p>
+        </li>
+        <li>
+          <%= tag 'feature' %>
+          <p>Zoom values is now maintained across sessions.</p>
+        </li>
+        <li>
+          <%= tag 'fixed' %>
+          <p>Not adding newline when writing .dat files.</p>
+        </li>
+        <li>
+          <%= tag 'fixed' %>
+          <p>Generating segment mark with negative length.</p>
+        </li>
+        <li>
+          <%= tag 'fixed' %>
+          <p>The number of found segments displayed after a scanning job is now
+          correct.</p>
+        </li>
+        <li>
+          <%= tag 'fixed' %>
+          <p>Missing grid lines in the Profile viewer when scrolling.</p>
+        </li>
+      </ul>
+
+      <%= version_tag '0.9.7', 108, Date.new(2014, 4, 16) %>
+      <ul class="notes">
+        <li>
+          <%= tag 'feature' %>
+          <p>When selecting a segment mark in the Profile viewer, the Segment list
+          will be scrolled automatically to the corresponding entry.</p>
+        </li>
+        <li>
+          <%= tag 'feature' %>
+          <p>Added alert message when running a scanning job over a EPG record that
+          already has marks for the selected EPG waveforms.</p>
+        </li>
+        <li>
+          <%= tag 'improved' %>
+          <p>Edit Segment dialog is no longer displayed automatically after adding
+          a new segment that already has an associated waveform.</p>
+        </li>
+        <li>
+          <%= tag 'fixed' %>
+          <p>Duplicate data when reading .dat files.</p>
+        </li>
+        <li>
+          <%= tag 'fixed' %>
+          <p>Edit Segment dialog is now always centered at the screen.</p>
+        </li>
+        <li>
+          <%= tag 'fixed' %>
+          <p>Segment list is no longer disabled when saving the EPG record.</p>
+        </li>
+        <li>
+          <%= tag 'fixed' %>
+          <p>Content of filepath in the Info tab when no record is active.</p>
+        </li>
+      </ul>
+
+      <%= version_tag '0.9.6', 101, Date.new(2014, 4, 8) %>
+      <ul class="notes">
+        <li>
+          <%= tag 'crash' %>
+          <p>Closing the last active record no longer crashes the software.</p>
+        </li>
+      </ul>
+
+      <%= version_tag '0.9.5', 100, Date.new(2014, 3, 19) %>
+      <ul class="notes">
+        <li>
+          <%= tag 'feature' %>
+          <p>If a record has been loaded from multiple files, these will be
+          shown in the Info tab.</p>
+        </li>
+        <li>
+          <%= tag 'feature' %>
+          <p>Record comments are loaded from binary .D0* files.</p>
+        </li>
+        <li>
+          <%= tag 'improved' %>
+          <p>Loading numbered files. When a EPG record is split in several files,
+          it is no longer needed to open the first file to load the rest.
+          Also, this option is now optional.</p>
+        </li>
+        <li>
+          <%= tag 'improved' %>
+          <p>Determinarion of the record name when is loaded from multiple files.</p>
+        </li>
+        <li>
+          <%= tag 'improved' %>
+          <p>File extension filters has been updated in Open and Save panels.</p>
+        </li>
+        <li>
+          <%= tag 'fixed' %>
+          <p>Not suggesting record name when saving a associated file.</p>
+        </li>
+        <li>
+          <%= tag 'fixed' %>
+          <p>Start and ending of the EPG segments is now written correctly when
+          saving a .csv file.</p>
+        </li>
+      </ul>
+
+      <%= version_tag '0.9.4', 99, Date.new(2014, 3, 16) %>
+      <ul class="notes">
+        <li>
+          <%= tag 'fixed' %>
+          <p>Ensuring the launching order of the search engines.</p>
+        </li>
+        <li>
+          <%= tag 'fixed' %>
+          <p>F waveform has been disabled.</p>
+        </li>
+
+      <%= version_tag '0.9.3', 95, Date.new(2012, 1, 30) %>
+      <ul class="notes">
+        <li>
+          <%= tag 'fixed' %>
+          <p>Values written in the .csv file are now correct.</p>
+        </li>
+        <li>
+          <%= tag 'fixed' %>
+          <p>Joining together segments of the same associated waveform but that
+          are too far apart.</p>
+        </li>
+      </ul>
+
+      <%= version_tag '0.9.2', 94, Date.new(2012, 1, 16) %>
+      <ul class="notes">
+        <li>
+          <%= tag 'improved' %>
+          <p>Collision detection and repairing of overlaps between found
+          segments (post-processing phase).</p>
+        </li>
+        <li>
+          <%= tag 'fixed' %>
+          <p>Joining together neighboring segments with same associated waveform
+          when the type of one of them has been edited.</p>
+        </li>
+        <li>
+          <%= tag 'fixed' %>
+          <p>Generation of short-lived segments when repairing segment overlaps.</p>
+        </li>
+        <li>
+          <%= tag 'fixed' %>
+          <p>Insertion of segments at the wrong location in the internal array.</p>
+        </li>
+        <li>
+          <%= tag 'note' %>
+          <p>About window content has been changed.</p>
+        </li>
+      </ul>
+      <%= version_tag '0.9.1', 93, Date.new(2012, 1, 9) %>
+      <ul class="notes">
+        <li>
+          <%= tag 'feature' %>
+          <p>Added computing time in the scanning report.</p>
+        </li>
+        <li>
+          <%= tag 'feature' %>
+          <p>Added scrolling to the Profile viewer.</p>
+        </li>
+        <li>
+          <%= tag 'fixed' %>
+          <p>Collision repairing of ending segments.</p>
+        </li>
+        <li>
+          <%= tag 'fixed' %>
+          <p>Updating record status after saving.</p>
+        </li>
+      </ul>
+
+      <%= version_tag '0.9.0', 92, Date.new(2012, 1, 2) %>
+      <ul class="notes">
+        <li><p>First available version.</p></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<%= erb :footer %>
