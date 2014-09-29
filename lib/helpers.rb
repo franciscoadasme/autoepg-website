@@ -7,6 +7,10 @@ helpers do
     image_src = "http://www.gravatar.com/avatar/#{hash}?#{URI.encode_www_form params}"
   end
 
+  def aws_link_to(content)
+    File.join(settings.aws_base_url, content)
+  end
+
   def version_tag(version, build, date)
     date_format = "%B #{date.day.ordinalize} %Y"
     %Q{<h2>
