@@ -16,7 +16,7 @@ body {
 	padding: 128px 0;
 	background: white;
 
-	&:nth-child(odd) {
+	&:nth-child(even) {
 		background: $module-bg-color url(../img/grey_background.jpg);
 		background-position: bottom;
 		background-repeat: repeat-x;

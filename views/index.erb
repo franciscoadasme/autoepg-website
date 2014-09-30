@@ -1,6 +1,15 @@
 <%= erb :nav %>
 <%= erb :header %>
 
+<section class="module">
+	<div class="container">
+		<blockquote>
+			<p class="lead">The electrical penetration graph or EPG is a system used by biologists to study the interaction of insects such as aphids, thrips, and leafhoppers with plants. Therefore, it can also be used to study the basis of plant virus transmission, host plant selection by insects and the way in which insects can find and feed from the phloem of the plant.</p>
+			<small><a href="http://en.wikipedia.org/wiki/Electrical_penetration_graph">Wikipedia article</a> on Electrical Penetration Graph technique.</small>
+		</blockquote>
+	</div>
+</section>
+
 <section id="features" class="module">
 	<div class="container">
 		<div class="row">
@@ -11,8 +20,8 @@
 
 				<div id="automatic" class="promo">
 					<div class="inner">
-						<h3>Analyze your EPG recordings with one button push</h3>
-						<p>Several EPG waveform recognition engines have been developed based on data collected by Dr. Ramirez's group, which includes many aphids species. All these advancements are added to AutoEPG software offering automatic analysis of EPG data.</p>
+						<h3>Analyze your EPG records with one button push</h3>
+						<p>Several EPG waveform search engines have been developed based on data collected by Dr. Ramirez's group for a number of aphids species. All these advancements have been added to AutoEPG offering automatic analysis of EPG data. <em>First of its kind</em>.</p>
 					</div>
 					<img src="img/automatic.png">
 				</div>
@@ -20,7 +29,7 @@
 				<div id="editing" class="promo">
 					<div class="inner">
 						<h3>A tailored analysis tool</h3>
-						<p>EPG analysis couldn't be faster with AutoEPG's clean and easy-to-use user interface. The EPG Profile Viewer offers an excellent way to track, review and edit your work, and together with lots of useful shortcuts, they greatly enhance your analysis workflow. </p>
+						<p>EPG data analysis couldn't be faster with AutoEPG's clean and easy-to-use user interface. The EPG Profile Viewer offers an excellent way to track, review and edit your work, and together with lots of useful shortcuts, they greatly enhance your analysis workflow. </p>
 					</div>
 					<img src="img/editing.png">
 				</div>
@@ -36,7 +45,7 @@
 				<div id="share" class="promo">
 					<div class="inner">
 						<h3>Don't work by your own, share it with ease</h3>
-						<p>You can export your changes into a EPS format file, which then can be edited by your colleagues. Invidiual comments can be very useful for reviewing the results and sharing your ideas, so use and read them thoroughly.</p>
+						<p>You can export your changes into a EPG format file, which then can be edited by your colleagues. Invidiual comments can be very useful for reviewing the results and sharing your ideas, so use and read them thoroughly.</p>
 					</div>
 					<img src="img/exporting.png">
 				</div>
@@ -58,7 +67,7 @@
 						<div class="span4">
 							<div class="content">
 								<h4>Widgets &amp; panels</h4>
-								<p>Many visual components of AutoEPG can be undock from the main window, so you can drag them to a secondary monitor and arrange them as you please.</p>
+								<p>Many visual components of AutoEPG can be undocked from the main window, so you can drag them to a secondary monitor and arrange them as you please.</p>
 							</div>
 						</div>
 					</div>
@@ -84,7 +93,7 @@
           <p>However, it should be portable to other Ubuntu- or Debian-based distros.</p> -->
 		  <p>Soon to be available.</p>
           <a class="btn btn-primary btn-large btn-block disabled" href="#" title="Not available yet">
-          	Get binary
+          	Get the binary
           </a>
           <!-- <small class="muted">Version 0.9.11 Build 124 (Sept 2014)</small> -->
         </div>
@@ -94,7 +103,7 @@
           <img src="img/win.png" alt="Windows" class="tile-image">
           <h3 class="tile-title">Windows</h3>
           <p>It is distributed as a single executable package, ready to deploy everywhere.</p>
-          <p>It runs on Windows XP, 7 and 8 (probably).</p>
+          <p>It runs on Windows XP, Vista, 7 and 8.</p>
           <a class="btn btn-primary btn-large btn-block" href="/download/windows">
           	autoepg.exe
           </a>
@@ -120,7 +129,7 @@
 		</p>
 		<div class="row">
 			<p class="span8 offset2 text-center">
-				Check out the <a href="/benchmark">Benchmark toolset</a> for more information about training and testing data sets and analysis tools used during AutoEPG development.
+				Check out the <a href="/benchmark">Benchmark page</a> for more information about the training and testing data sets and analysis tools used during AutoEPG development.
 			</p>
 			<div class="span8 offset2 text-center well well-small" style="margin-top: 20px;">
 				<span class="badge badge-warning">#</span> AutoEPG's source code is now available at <a href="https://github.com/franciscoadasme/autoepg">GitHub</a>.
@@ -153,7 +162,7 @@
 		        <img src="<%= gravatar_for "francisco.adasme@gmail.com", size: 192 %>" alt="Francisco Adasme" style="background-image: url(<%= gravatar_for "francisco.adasme@gmail.com", size: 192 %>)" />
 		        <figcaption><h3>Francisco Adasme</h3></figcaption>
 		      </figure>
-		      <p>Francisco is a Bioinformatician and a PhD student in Applied Sciences at <a href="http://www.utalca.cl">Universidad de Talca</a>, Chile. He is the developer behind AutoEPG and has developed some software routines in others science fields.</p>
+		      <p>Francisco is a Bioinformatician and a PhD student in Applied Sciences at <a href="http://www.utalca.cl">Universidad de Talca</a>, Chile. He is the developer behind AutoEPG and has developed some software in other science fields as well.</p>
 					<p>His main research interests are related to the study of molecular interactions in several protein-drug systems through computational chemistry methods, but he also serves as web developer.</p>
 		      <a href="http://about.me/franciscoadasme">about.me/franciscoadasme</a>
 		    </li><!--
@@ -163,7 +172,7 @@
 		        <figcaption><h3>Camila Muñoz</h3></figcaption>
 		      </figure>
 		      <p>Camila proposed AutoEPG development during her internship at Dr. Ramirez's laboratory back in 2011. Since then, she has taken the lead of the project as well as she took care of product development and testing.</p>
-		      <p>She belongs to the <a href="http://cbsm.utalca.cl">Centre for Bioinformatics and Molecular Simulations</a> (CBSM), where she's currently conducting his PhD thesis on the molecular study of A<sub>2A</sub> receptor inhibitors.</p>
+		      <p>She belongs to the <a href="http://cbsm.utalca.cl">Center for Bioinformatics and Molecular Simulation</a> (CBSM), where she's currently conducting his PhD thesis on the molecular study of A<sub>2A</sub> receptor inhibitors.</p>
 		      <a href="http://about.me/camila.munoz">about.me/camila.munoz</a>
 		    </li><!--
 		    --><li>
