@@ -20,6 +20,10 @@ get '/download/windows' do
   redirect aws_link_to('AutoEPG.exe')
 end
 
+get '/download/mac' do
+  redirect aws_link_to('AutoEPG.dmg')
+end
+
 get '/download/user-manual' do
   redirect aws_link_to('autoepg-user-manual.pdf')
 end
