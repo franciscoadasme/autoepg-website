@@ -17,15 +17,15 @@ get '/css/stylesheet.css' do
 end
 
 get '/download/windows' do
-  redirect aws_link_to('AutoEPG.exe')
+  redirect aws_link_to('A2EPG.exe')
 end
 
 get '/download/mac' do
-  redirect aws_link_to('AutoEPG.dmg')
+  redirect aws_link_to('A2EPG.dmg')
 end
 
 get '/download/linux' do
-  redirect aws_link_to('autoepg.tar.gz')
+  redirect aws_link_to('a2epg.tar.gz')
 end
 
 get '/download/user-manual' do
