@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>A2EPG - Assisted Analysis of EPG data</title>
+  <title>A2EPG ~ Assisted Analysis of EPG data</title>
   <link rel="stylesheet" href="css/stylesheet.css">
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -13,7 +13,6 @@
 
 	  ga('create', 'UA-55345609-1', 'auto');
 	  ga('send', 'pageview');
-
 	</script>
 </head>
 
@@ -25,14 +24,12 @@
     <script src="js/jquery.smooth-scroll.min.js"></script>
     <script>
       $(document).ready(function() {
-
         $('ul.nav a, #learn-more').smoothScroll();
+        
         $('a.top').on('click', function(e) {
         	e.preventDefault();
         	$.smoothScroll({ offset: 0 })
         });
-        console.log($('a.top').text());
-
       });
     </script>
   <% end %>
