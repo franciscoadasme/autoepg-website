@@ -29,11 +29,11 @@ get '/download/linux' do
 end
 
 get '/download/user-manual' do
-  redirect aws_link_to('a2epg-user-manual.pdf')
+  redirect aws_link_to('a2epg_user_manual.pdf')
 end
 
 get '/download/post-analysis' do
-  redirect aws_link_to('a2epg-post-analysis.py')
+  redirect aws_link_to('a2epg_post_analysis.py')
 end
 
 get '/release-notes' do
